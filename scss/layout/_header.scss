@@ -1,0 +1,188 @@
+@use "../utils/mixins" as mix;
+@use "../layout/flex" as flx;
+@use "../components/buttons" as btns;
+@use "../utils/fonts" as font;
+@use "../utils/varibles" as var;
+
+header {
+  background-color: var(--color-ffffff);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 16px 0;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 20px;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    .nav-logo {
+      @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .hamburger {
+        position: relative;
+        z-index: 1111;
+        display: none;
+        .menuButton {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 13%;
+          color: #090909;
+          width: 3.5em;
+          height: 3.5em;
+          border-radius: 0.5em;
+          background: #e8e8e8;
+          border: 1px solid #e8e8e8;
+          transition: all 0.3s;
+          box-shadow: 6px 6px 15px #c5c5c5, -6px -6px 12px #ffffff;
+        }
+        .menuButton:hover {
+          border: 1px solid white;
+        }
+        .menuButton:active {
+          color: #666;
+          box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+        }
+        input[type="checkbox"] {
+          // -webkit-appearance: none;
+          display: none;
+          visibility: hidden;
+        }
+        .menuButton span {
+          width: 30px;
+          height: 4px;
+          background: #131313;
+          border-radius: 100px;
+          transition: 0.3s ease;
+        }
+        input[type]:checked ~ span.top {
+          transform: translateY(290%) rotate(45deg);
+          width: 40px;
+        }
+        input[type]:checked ~ span.bot {
+          transform: translateY(-270%) rotate(-45deg);
+          width: 40px;
+          box-shadow: 0 0 10px #495057;
+        }
+        input[type]:checked ~ span.mid {
+          transform: translateX(-20px);
+          opacity: 0;
+        }
+        @media (max-width: 768px) {
+          display: flex;
+        }
+      }
+    }
+    .nav-menu-and-search {
+      display: flex;
+      max-width: 1000px;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s;
+
+      width: 100%;
+      gap: 20px;
+      @media (max-width: 768px) {
+        padding: 50px 100px 0 180px;
+        position: fixed;
+        z-index: 1;
+        background-color: #fff;
+        width: calc(100% - 30px);
+        height: 100vh;
+        right: 0;
+        top: 0;
+        justify-content: start;
+        flex-direction: column;
+        align-items: end;
+        box-shadow: -10px 0px 200px 100px #495057;
+        transform: translateX(200%);
+      }
+      @media (max-width: 690px) {
+        flex-direction: column;
+        padding: 60px 50px;
+      }
+      .search-input {
+        position: relative;
+        max-width: 372px;
+        width: 100%;
+        @media (max-width: 690px) {
+          max-width: 100%;
+        }
+        input {
+          border-radius: 8px;
+          border-color: transparent;
+          background-color: var(--color-f5f5f5);
+          outline: none;
+          padding: 16px;
+          width: 100%;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: 0%;
+          padding-left: 40px;
+        }
+        img {
+          padding-left: 16px;
+          position: absolute;
+          top: 18px;
+          left: 0;
+        }
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 369px;
+        width: 100%;
+        gap: 10px;
+        @media (max-width: 768px) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        li {
+          a {
+            white-space: nowrap;
+            color: var(--color-000000);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            transition: var(--transition-03);
+            &:hover {
+              opacity: 50%;
+            }
+          }
+        }
+      }
+      .nav-icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media (max-width: 768px) {
+          position: absolute;
+          left: 50px;
+          top: 55px;
+        }
+        @media (max-width: 690px) {
+          position: static;
+          justify-content: center;
+          width: 100%;
+        }
+      }
+    }
+    .nav-menu {
+      transform: translateX(0);
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@use "../utils/mixins" as mix;
+@use "../layout/flex" as flx;
+@use "../components/buttons" as comb;
+@use "../utils/fonts" as font;
+@use "../utils/varibles" as var;
+
+footer {
+  padding: 104px 0;
+  background-color: var(--color-000000);
+  .footer-contents {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @media (max-width: 830px) {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .footer-logo {
+      max-width: 384px;
+      p {
+        color: var(--color-CFCFCF);
+      }
+    }
+    .footer-contents-menus {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      @media (max-width: 443px) {
+        flex-direction: column;
+      }
+      .footer-servis {
+        h3 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: 0%;
+          color: var(--color-ffffff);
+        }
+        ul {
+          li {
+            a {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 32px;
+              letter-spacing: 0%;
+
+              color: var(--color-CFCFCF);
+            }
+          }
+        }
+      }
+      .footer-asisitans {
+        h3 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: 0%;
+
+          color: var(--color-ffffff);
+        }
+        ul {
+          li {
+            a {
+              color: var(--color-CFCFCF);
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 32px;
+              letter-spacing: 0%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

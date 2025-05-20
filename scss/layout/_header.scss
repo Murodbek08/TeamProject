@@ -10,8 +10,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-
   padding: 16px 0;
+  z-index: 99999999;
   nav {
     display: flex;
     align-items: center;

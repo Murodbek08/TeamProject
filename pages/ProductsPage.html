@@ -8,6 +8,121 @@
   </head>
   <body>
     <header></header>
+    <div class="container">
+      <!-- Breadcrumb Navigation -->
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="separator">&gt;</span>
+        <a href="#">Catalog</a>
+        <span class="separator">&gt;</span>
+        <span class="current">Smartphones</span>
+      </div>
+
+      <div class="content">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+          <!-- Brand Filter -->
+          <div class="filter-group">
+            <div class="filter-header">
+              <h3>Brand</h3>
+              <span class="toggle-icon">▼</span>
+            </div>
+            <div class="filter-content">
+              <div class="search-box">
+                <i class="search-icon fas fa-search"></i>
+                <input type="text" placeholder="Search" />
+              </div>
+              <div class="filter-options" id="brand-options">
+                <!-- Brand options will be populated from data -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Battery Capacity Filter -->
+          <div class="filter-group">
+            <div class="filter-header">
+              <h3>Battery capacity</h3>
+              <span class="toggle-icon">▼</span>
+            </div>
+            <div class="filter-content">
+              <!-- Battery options would go here -->
+            </div>
+          </div>
+
+          <!-- Screen Type Filter -->
+          <div class="filter-group">
+            <div class="filter-header">
+              <h3>Screen type</h3>
+              <span class="toggle-icon">▼</span>
+            </div>
+            <div class="filter-content">
+              <!-- Screen type options would go here -->
+            </div>
+          </div>
+
+          <!-- Screen Diagonal Filter -->
+          <div class="filter-group">
+            <div class="filter-header">
+              <h3>Screen diagonal</h3>
+              <span class="toggle-icon">▼</span>
+            </div>
+            <div class="filter-content">
+              <!-- Screen diagonal options would go here -->
+            </div>
+          </div>
+
+          <!-- Protection Class Filter -->
+          <div class="filter-group">
+            <div class="filter-header">
+              <h3>Protection class</h3>
+              <span class="toggle-icon">▼</span>
+            </div>
+            <div class="filter-content">
+              <!-- Protection class options would go here -->
+            </div>
+          </div>
+
+          <!-- Built-in Memory Filter -->
+          <div class="filter-group">
+            <div class="filter-header">
+              <h3>Built-in memory</h3>
+              <span class="toggle-icon">▼</span>
+            </div>
+            <div class="filter-content">
+              <!-- Memory options would go here -->
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+          <!-- Product Header -->
+          <div class="product-header">
+            <div class="product-count">
+              Selected Products: <span id="product-count">0</span>
+            </div>
+            <div class="sort-dropdown">
+              <select id="sort-select">
+                <option value="rating">By rating</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="product-grid" id="product-grid">
+            <!-- Products will be populated from data -->
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination" id="pagination">
+            <!-- Pagination will be populated dynamically -->
+          </div>
+        </main>
+      </div>
+    </div>
     <footer></footer>
     <script src="../js/products-data.js"></script>
     <script src="../js/main.js"></script>

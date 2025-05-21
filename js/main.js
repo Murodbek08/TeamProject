@@ -99,3 +99,45 @@ function footer() {
   `;
 }
 footerSection.innerHTML += footer();
+
+// card
+
+function renderProducts(products) {
+  const container = document.querySelector("#product-container");
+  container.innerHTML = "";
+
+
+  products.slice(0, 8).forEach((product) => {
+    const productCard = `
+      <div class="card">
+        <img src="${product.image}" alt="${product.title}">
+        <h3>${product.title}</h3>
+        <p>$${product.price}</p>
+        <button>Buy Now</button>
+      </div>
+    `;
+    container.innerHTML += productCard;
+  });
+}
+
+
+renderProducts(products);
+
+
+
+// 4tali kard
+const productList = document.getElementById("product-list");
+
+productData.slice(0, 4).forEach((el) => {
+  const card = document.createElement("div");
+  card.className = "card" + (el.title === "MacBook Pro" ? " dark" : "");
+
+  card.innerHTML = `
+    <img src="${el.image}" alt="${el.title}">
+    <h3>${el.title}</h3>
+    <p>${el.description}</p>
+    <button>${el.buttonText}</button>
+  `;
+
+  productList.appendChild(card);
+});

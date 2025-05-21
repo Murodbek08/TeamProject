@@ -11,6 +11,11 @@
   justify-content: space-between;
   margin: 24px 0px 72px;
   gap: 16px;
+  @media (max-width: 1000px) {
+    & {
+      flex-direction: column;
+    }
+  }
   .oneSection {
     max-width: 512px;
     border-width: 1px;
@@ -101,6 +106,9 @@
     img {
       width: 337px;
       margin-bottom: 40px;
+      @media (max-width: 390px) {
+        width: 100%;
+      }
     }
     .payment-form {
       display: flex;
@@ -122,6 +130,9 @@
         align-items: center;
         justify-content: space-between;
         gap: 10px;
+        @media (max-width: 460px) {
+          flex-direction: column;
+        }
       }
     }
     .chechedTitle {
@@ -149,6 +160,12 @@
           color: white;
         }
       }
+      @media (max-width: 530px) {
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 530px) {
+      width: 100%;
     }
   }
 }

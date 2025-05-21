@@ -107,6 +107,10 @@ function renderProducts(products) {
   container.innerHTML = "";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
 =======
 
 >>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
@@ -124,14 +128,20 @@ function renderProducts(products) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 renderProducts(products);
 
 =======
+=======
+>>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
 
 renderProducts(products);
 
 
 
+<<<<<<< HEAD
+>>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
+=======
 >>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
 // 4tali kard
 const productList = document.getElementById("product-list");

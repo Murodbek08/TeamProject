@@ -106,6 +106,10 @@ function renderProducts(products) {
   const container = document.querySelector("#product-container");
   container.innerHTML = "";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
   products.slice(0, 8).forEach((product) => {
     const productCard = `
       <div class="card">
@@ -119,8 +123,16 @@ function renderProducts(products) {
   });
 }
 
+<<<<<<< HEAD
 renderProducts(products);
 
+=======
+
+renderProducts(products);
+
+
+
+>>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
 // 4tali kard
 const productList = document.getElementById("product-list");
 

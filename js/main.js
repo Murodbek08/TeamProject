@@ -39,11 +39,11 @@ function header() {
             <div class="nav-icons">
               <div class="nav-like">
                 <span class="like-count"></span>
-                <img src="../images/header/like.svg" alt="Like icon ?" />
+               <img src="../images/header/like.svg" alt="Like icon ?" />
               </div>
               <div class="nav-korzinka">
                 <span class="korzinka-count"></span>
-                <img src="../images/header/korzinka.svg" alt="Person icon ?" />
+                  <a href="../pages/ShoppingCart.html"><img src="../images/header/korzinka.svg" alt="Person icon ?" /></a>
               </div>
               <div class="nav-person">
                 <span class="person-count"></span>
@@ -106,7 +106,6 @@ function renderProducts(products) {
   const container = document.querySelector("#product-container");
   container.innerHTML = "";
 
-
   products.slice(0, 8).forEach((product) => {
     const productCard = `
       <div class="card">
@@ -120,10 +119,7 @@ function renderProducts(products) {
   });
 }
 
-
 renderProducts(products);
-
-
 
 // 4tali kard
 const productList = document.getElementById("product-list");

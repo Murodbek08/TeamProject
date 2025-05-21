@@ -152,7 +152,15 @@
 }
 
 .page3-position {
+<<<<<<< HEAD
   padding: 80px 0;
+=======
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+>>>>>>> 250c1502bc7f334125326260810e07a8796d71e8
   .page3-header {
     display: flex;
     justify-content: space-between;
@@ -169,6 +177,10 @@
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+    justify-content: center;
+>>>>>>> 250c1502bc7f334125326260810e07a8796d71e8
     margin-top: 32px;
     div {
       display: flex;
@@ -188,6 +200,10 @@
 }
 .home-page4 {
   #product-container {
+<<<<<<< HEAD
+=======
+    justify-content: center;
+>>>>>>> 250c1502bc7f334125326260810e07a8796d71e8
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
@@ -260,10 +276,21 @@
 
 .home-page5 {
   margin-top: 100px;
+<<<<<<< HEAD
   .product-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+=======
+  display: flex;
+  justify-content: center;
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+>>>>>>> 250c1502bc7f334125326260810e07a8796d71e8
   }
 
   .card {
@@ -358,3 +385,69 @@
     border-radius: 6px;
   }
 }
+<<<<<<< HEAD
+=======
+
+@media (min-width: 320px) {
+  .home-page {
+    display: flex;
+    align-items: center;
+    img {
+      display: none;
+    }
+  }
+  .home-page2 {
+    display: none;
+  }
+
+  .home-page5 {
+    .product-container {
+      display: flex;
+
+      width: 360px;
+      img {
+        width: 270px;
+      }
+    }
+  }
+  .home-page7 {
+    background-image: none;
+    background-color: var.$card-dark-grey;
+  }
+}
+
+@media (min-width: 766px) {
+  .home-page5 {
+    .product-container {
+      img {
+        width: 360px;
+      }
+    }
+  }
+
+  .home-page7 {
+    background-color: none;
+    background-image: url(../../images/main/last-page-bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home-page {
+    display: flex;
+
+    img {
+      display: block;
+    }
+  }
+  .home-page2 {
+    display: block;
+  }
+  .home-page6 {
+    display: flex;
+
+    flex-direction: row;
+  }
+}
+>>>>>>> 250c1502bc7f334125326260810e07a8796d71e8

@@ -108,12 +108,16 @@ function renderProducts(products) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
 =======
 
 >>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
+=======
+
+>>>>>>> 250c1502bc7f334125326260810e07a8796d71e8
   products.slice(0, 8).forEach((product) => {
     const productCard = `
       <div class="card">
@@ -129,20 +133,26 @@ function renderProducts(products) {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 renderProducts(products);
 
 =======
 =======
 >>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
+=======
+>>>>>>> 250c1502bc7f334125326260810e07a8796d71e8
 
 renderProducts(products);
 
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
 =======
 >>>>>>> 285ce5323ed91439c5a44f7b162f8da551953f35
+=======
+>>>>>>> 250c1502bc7f334125326260810e07a8796d71e8
 // 4tali kard
 const productList = document.getElementById("product-list");
 

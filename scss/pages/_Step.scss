@@ -142,4 +142,7 @@
       color: white;
     }
   }
+  @media (max-width: 530px) {
+    flex-direction: column;
+  }
 }

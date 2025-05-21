@@ -8,8 +8,102 @@
   </head>
   <body>
     <header></header>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+
+      <div class="cart">
+        <div class="products">
+          <div class="product" data-id="1" data-price="1399">
+            <img src="../images/shaxriyor/telefon-16promax.svg" alt="iPhone" />
+            <div class="product-info">
+              <h3>Apple iPhone 14 Pro Max</h3>
+              <p>128Gb Deep Purple</p>
+              <p class="sku">#251395269139884</p>
+            </div>
+            <div class="quantity-controls">
+              <button class="minus-btn">−</button>
+              <span class="quantity">1</span>
+              <button class="plus-btn">+</button>
+            </div>
+            <div class="price">$1399</div>
+            <button class="delete-btn">×</button>
+          </div>
+
+          <div class="product" data-id="2" data-price="549">
+            <img src="../images/shaxriyor/noushnik.svg" alt="AirPods" />
+            <div class="product-info">
+              <h3>AirPods Max Silver</h3>
+              <p class="sku">#53459358345</p>
+            </div>
+            <div class="quantity-controls">
+              <button class="minus-btn">−</button>
+              <span class="quantity">1</span>
+              <button class="plus-btn">+</button>
+            </div>
+            <div class="price">$549</div>
+            <button class="delete-btn">×</button>
+          </div>
+
+          <div class="product" data-id="3" data-price="399">
+            <img src="../images/shaxriyor/soat.svg" alt="Apple Watch" />
+            <div class="product-info">
+              <h3>Apple Watch Series 9</h3>
+              <p>GPS 41mm Starlight Aluminum</p>
+              <p class="sku">#63632324</p>
+            </div>
+            <div class="quantity-controls">
+              <button class="minus-btn">−</button>
+              <span class="quantity">1</span>
+              <button class="plus-btn">+</button>
+            </div>
+            <div class="price">$399</div>
+            <button class="delete-btn">×</button>
+          </div>
+        </div>
+
+        <div class="summary">
+          <h2>Order Summary</h2>
+
+          <div class="promo-section">
+            <p>Discount code / Promo code</p>
+            <input type="text" placeholder="Code" />
+          </div>
+
+          <div class="card-section">
+            <p>Your bonus card number</p>
+            <div class="card-input">
+              <input type="text" placeholder="Enter Card Number" />
+              <button class="apply-btn">Apply</button>
+            </div>
+          </div>
+
+          <div class="totals">
+            <div class="total-row">
+              <span>Subtotal</span>
+              <span id="subtotal">$2347</span>
+            </div>
+            <div class="total-row">
+              <span>Estimated Tax</span>
+              <span id="tax">$50</span>
+            </div>
+            <div class="total-row">
+              <span>Estimated shipping & Handling</span>
+              <span id="shipping">$29</span>
+            </div>
+            <div class="total-row final-total">
+              <span>Total</span>
+              <span id="total">$2426</span>
+            </div>
+          </div>
+
+          <button id="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+
     <footer></footer>
-     <script src="../js/products-data.js"></script>
+    <script src="../js/products-data.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/shaxriyor.js"></script>
   </body>
 </html>

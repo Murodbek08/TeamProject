@@ -448,7 +448,11 @@ footer .footer-contents .footer-contents-menus .footer-asisitans ul li a {
 }
 
 .page3-position {
+  flex-direction: column;
+  align-items: center;
   padding: 80px 0;
+  display: flex;
+  justify-content: center;
 }
 .page3-position .page3-header {
   display: flex;
@@ -466,6 +470,7 @@ footer .footer-contents .footer-contents-menus .footer-asisitans ul li a {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 32px;
 }
 .page3-position .page3-card div {
@@ -487,6 +492,7 @@ footer .footer-contents .footer-contents-menus .footer-asisitans ul li a {
   /* Optional: Heart icon for favorites (liked = true) */
 }
 .home-page4 #product-container {
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
@@ -548,11 +554,14 @@ footer .footer-contents .footer-contents-menus .footer-asisitans ul li a {
 
 .home-page5 {
   margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 .home-page5 .product-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 .home-page5 .card {
   background-color: #fff;
@@ -634,4 +643,54 @@ footer .footer-contents .footer-contents-menus .footer-asisitans ul li a {
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
   border-radius: 6px;
+}
+
+@media (min-width: 320px) {
+  .home-page {
+    display: flex;
+    align-items: center;
+  }
+  .home-page img {
+    display: none;
+  }
+  .home-page2 {
+    display: none;
+  }
+  .home-page5 .product-container {
+    display: flex;
+    width: 360px;
+  }
+  .home-page5 .product-container img {
+    width: 270px;
+  }
+  .home-page7 {
+    background-image: none;
+    background-color: rgb(53, 53, 53);
+  }
+}
+@media (min-width: 766px) {
+  .home-page5 .product-container img {
+    width: 360px;
+  }
+  .home-page7 {
+    background-color: none;
+    background-image: url(../../images/main/last-page-bg.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1440px) {
+  .home-page {
+    display: flex;
+  }
+  .home-page img {
+    display: block;
+  }
+  .home-page2 {
+    display: block;
+  }
+  .home-page6 {
+    display: flex;
+    flex-direction: row;
+  }
 }

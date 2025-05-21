@@ -1,0 +1,154 @@
+.appTapImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  overflow: auto;
+  padding: 72px 0px;
+}
+.TwoSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0px 72px;
+  gap: 16px;
+  .oneSection {
+    max-width: 512px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(235, 235, 235);
+    border-image: initial;
+    padding: 32px 24px;
+    border-radius: 20px;
+    h1 {
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 16px;
+      margin-bottom: 31px;
+    }
+    .oneSectionCards {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 16px;
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(246, 246, 246);
+        gap: 50px;
+        border-radius: 13px;
+        padding: 16px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+        span {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+      }
+    }
+    .oneSectionTitle {
+      .summary-box {
+        font-size: 14px;
+        color: rgb(51, 51, 51);
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        gap: 10px;
+        .row {
+          display: flex;
+          justify-content: space-between;
+          margin: 8px 0px;
+        }
+        .bold {
+          font-weight: bold;
+          font-size: 16px;
+        }
+        .total {
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .twoSection {
+    width: 512px;
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      margin: 0px 0px 32px;
+    }
+    .appTaptitle {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      gap: 56px;
+      a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: rgb(0, 0, 0);
+      }
+    }
+    img {
+      width: 337px;
+      margin-bottom: 40px;
+    }
+    .payment-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .input-field {
+        font-size: 14px;
+        padding: 16px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(221, 221, 221);
+        border-image: initial;
+        border-radius: 6px;
+        outline: none;
+        transition: border-color 0.2s;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+    }
+    .chechedTitle {
+      display: flex;
+      gap: 16px;
+      margin: 50px 0px;
+    }
+    .twoBtnSTEPTHree {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      button {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        padding: 24px 86px;
+        border-radius: 6px;
+        transition: 0.2s ease-out;
+        padding: 24px 103px;
+        cursor: pointer;
+        &:active {
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+  }
+}

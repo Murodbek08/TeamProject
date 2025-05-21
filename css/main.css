@@ -599,3 +599,359 @@ body {
     width: 100%;
   }
 }
+.address-selector {
+  height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  margin: 32px 0 48px;
+}
+.address-selector h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+.address-selector .address-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 12px;
+}
+.address-selector .address-card .radio-wrapper {
+  position: relative;
+}
+.address-selector .address-card .radio-wrapper input[type=radio] {
+  opacity: 0;
+  position: absolute;
+}
+.address-selector .address-card .radio-wrapper .custom-radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.address-selector .address-card .radio-wrapper .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.2s;
+}
+.address-selector .address-card .radio-wrapper input[type=radio]:checked + .custom-radio::after {
+  opacity: 1;
+}
+.address-selector .address-card .address-info {
+  display: flex;
+  gap: 16px;
+  flex-grow: 1;
+}
+.address-selector .address-card .address-info .addres-infoCard .address-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.address-selector .address-card .address-info .addres-infoCard .address-title .tag {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+}
+.address-selector .address-card .address-info .addres-infoCard .address-title .tag.home {
+  background: #000;
+}
+.address-selector .address-card .address-info .addres-infoCard .address-title .tag.office {
+  background: #333;
+}
+.address-selector .address-card .address-info p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #444;
+}
+.address-selector .address-card .actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+.address-selector .address-card .actions button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.address-selector .address-card .actions button.edit-btn:hover {
+  color: #007bff;
+}
+.address-selector .address-card .actions button.delete-btn:hover {
+  color: #dc3545;
+}
+
+.addToCard {
+  margin: 48px 0 88px;
+}
+.addToCard img {
+  display: flex;
+  margin: 0 auto;
+}
+.addToCard img:active {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.twoBtn {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+.twoBtn button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 24px 86px;
+  border-radius: 6px;
+  transition: 0.2s ease-out;
+  padding: 24px 103px;
+  cursor: pointer;
+}
+.twoBtn button:active {
+  background-color: black;
+  color: white;
+}
+
+.shipment-method h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+.shipment-method .method-card {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  margin-bottom: 12px;
+  transition: border 0.2s ease;
+}
+.shipment-method .method-card .radio-wrapper {
+  position: relative;
+  margin-right: 16px;
+}
+.shipment-method .method-card .radio-wrapper input[type=radio] {
+  opacity: 0;
+  position: absolute;
+}
+.shipment-method .method-card .radio-wrapper .custom-radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.shipment-method .method-card .radio-wrapper .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.2s;
+}
+.shipment-method .method-card .radio-wrapper input[type=radio]:checked + .custom-radio::after {
+  opacity: 1;
+}
+.shipment-method .method-card .method-info {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.shipment-method .method-card .method-info .title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+.shipment-method .method-card .method-info .desc {
+  font-size: 13px;
+  color: #666;
+}
+.shipment-method .method-card .date {
+  font-size: 13px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.appTapImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  overflow: auto;
+  padding: 72px 0px;
+}
+
+.TwoSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0px 72px;
+  gap: 16px;
+}
+.TwoSection .oneSection {
+  max-width: 512px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(235, 235, 235);
+  -o-border-image: initial;
+     border-image: initial;
+  padding: 32px 24px;
+  border-radius: 20px;
+}
+.TwoSection .oneSection h1 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 16px;
+  margin-bottom: 31px;
+}
+.TwoSection .oneSection .oneSectionCards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+}
+.TwoSection .oneSection .oneSectionCards .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(246, 246, 246);
+  gap: 50px;
+  border-radius: 13px;
+  padding: 16px;
+}
+.TwoSection .oneSection .oneSectionCards .card img {
+  width: 40px;
+  height: 40px;
+}
+.TwoSection .oneSection .oneSectionCards .card p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.TwoSection .oneSection .oneSectionCards .card span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.TwoSection .oneSection .oneSectionTitle .summary-box {
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 10px;
+}
+.TwoSection .oneSection .oneSectionTitle .summary-box .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+.TwoSection .oneSection .oneSectionTitle .summary-box .bold {
+  font-weight: bold;
+  font-size: 16px;
+}
+.TwoSection .oneSection .oneSectionTitle .summary-box .total {
+  font-weight: bold;
+  font-size: 16px;
+}
+.TwoSection .twoSection {
+  width: 512px;
+}
+.TwoSection .twoSection h1 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0px 0px 32px;
+}
+.TwoSection .twoSection .appTaptitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 56px;
+}
+.TwoSection .twoSection .appTaptitle a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(0, 0, 0);
+}
+.TwoSection .twoSection img {
+  width: 337px;
+  margin-bottom: 40px;
+}
+.TwoSection .twoSection .payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.TwoSection .twoSection .payment-form .input-field {
+  font-size: 14px;
+  padding: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(221, 221, 221);
+  -o-border-image: initial;
+     border-image: initial;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.TwoSection .twoSection .payment-form .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.TwoSection .twoSection .chechedTitle {
+  display: flex;
+  gap: 16px;
+  margin: 50px 0px;
+}
+.TwoSection .twoSection .twoBtnSTEPTHree {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.TwoSection .twoSection .twoBtnSTEPTHree button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 24px 86px;
+  border-radius: 6px;
+  transition: 0.2s ease-out;
+  padding: 24px 103px;
+  cursor: pointer;
+}
+.TwoSection .twoSection .twoBtnSTEPTHree button:active {
+  background-color: black;
+  color: white;
+}
